@@ -372,8 +372,8 @@ console.log("Hello World");
 // console.log(userInput % 2 ? "Не парне" : "Парне")
 
 
-const a = 120;
-const b = 180;
+// const a = 120;
+// const b = 180;
 
 // if(a > 100 && b > 100) {
 //     if (a > b) {
