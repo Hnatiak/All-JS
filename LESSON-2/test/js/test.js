@@ -450,20 +450,30 @@ console.log("Hello World");
 
 
 
-const courses = ['HTML', 'CSS', 'REACT', 'JavaScript', 'Express', 'PostgreSQL']
+// const courses = ['HTML', 'CSS', 'REACT', 'JavaScript', 'Express', 'PostgreSQL']
 
-function addCourses(nameOfCourse) {
-    if(courses.includes(nameOfCourse)){ // Якщо вже є такий курс з ім'ям
-        return `${nameOfCourse} - Ви вже маєте такий курс`
-    }
+// function addCourses(nameOfCourse) {
+//     if(courses.includes(nameOfCourse)){ // Якщо вже є такий курс з ім'ям
+//         return `${nameOfCourse} - Ви вже маєте такий курс`
+//     }
 
-    courses.push(nameOfCourse)
-}
+//     courses.push(nameOfCourse)
+// }
 
+
+// // function removeCourses(nameOfCourse) {
+// //     if(courses.includes(nameOfCourse)){
+// //         const idx = courses.indexOf(nameOfCourse)
+// //         courses.splice(idx, 1);
+// //         return;
+// //     }
+
+// //     return `${nameOfCourse} - Немає у списку, тому видалення - НЕМОЖЛИВЕ`
+// // }
 
 // function removeCourses(nameOfCourse) {
-//     if(courses.includes(nameOfCourse)){
-//         const idx = courses.indexOf(nameOfCourse)
+//     const idx = courses.indexOf(nameOfCourse)
+//     if(!!~idx){
 //         courses.splice(idx, 1);
 //         return;
 //     }
@@ -471,35 +481,23 @@ function addCourses(nameOfCourse) {
 //     return `${nameOfCourse} - Немає у списку, тому видалення - НЕМОЖЛИВЕ`
 // }
 
+// function updateCourses(oldNameCourse, newNameCourse) {
+//     const idx = courses.indexOf(oldNameCourse);
+//     if(!!~idx) {
+//         courses.splice(idx, 1, newNameCourse)
+//         return;
+//     }
 
-// !!~courses.indexOf(nameOfCourse)
-function removeCourses(nameOfCourse) {
-    const idx = courses.indexOf(nameOfCourse)
-    if(!!~idx){
-        courses.splice(idx, 1);
-        return;
-    }
-
-    return `${nameOfCourse} - Немає у списку, тому видалення - НЕМОЖЛИВЕ`
-}
-
-function updateCourses(oldNameCourse, newNameCourse) {
-    const idx = courses.indexOf(oldNameCourse);
-    if(!!~idx) {
-        courses.splice(idx, 1, newNameCourse)
-        return;
-    }
-
-    return `${nameOfCourse} - курс з таким ім'ям не ІСНУЄ`
-}
+//     return `${nameOfCourse} - курс з таким ім'ям не ІСНУЄ`
+// }
 
 
 
-console.log(addCourses('Express'))
-addCourses('Test')
-console.log(courses) // ['HTML', 'CSS', 'REACT', 'JavaScript', 'Express', 'PostgreSQL']
-removeCourses('CSS')
-console.log(courses) // 'HTML', 'REACT', 'JavaScript', 'Express', 'PostgreSQL'
-console.log(removeCourses('awdawdawd'))
-updateCourses('Express', 'SQL')
-console.log(courses) // 'HTML', 'REACT', 'JavaScript', 'SQL', 'PostgreSQL'
+// console.log(addCourses('Express'))
+// addCourses('Test')
+// console.log(courses) // ['HTML', 'CSS', 'REACT', 'JavaScript', 'Express', 'PostgreSQL']
+// removeCourses('CSS')
+// console.log(courses) // 'HTML', 'REACT', 'JavaScript', 'Express', 'PostgreSQL'
+// console.log(removeCourses('awdawdawd'))
+// updateCourses('Express', 'SQL')
+// console.log(courses) // 'HTML', 'REACT', 'JavaScript', 'SQL', 'PostgreSQL'
