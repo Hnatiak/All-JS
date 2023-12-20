@@ -487,7 +487,7 @@ console.log("Hello World");
 
 // Або можна так:
 
-// const login = prompt('Введіть логін:')
+const login = prompt('Введіть логін:')
 // const pass = 'Я адмін'
 
 // if (!login) {
