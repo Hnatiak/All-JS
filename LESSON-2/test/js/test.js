@@ -501,3 +501,227 @@ console.log("Hello World");
 // console.log(removeCourses('awdawdawd'))
 // updateCourses('Express', 'SQL')
 // console.log(courses) // 'HTML', 'REACT', 'JavaScript', 'SQL', 'PostgreSQL'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const a = [1, 2, 3, 4, 5, 6]
+// const b = "Mango"
+// const message = "JavaScript - це цікаво";
+// const words = ["JavaScript", "це", "цікаво"];
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const numbers = [];
+// const numbers_two = [1, 2, 3, 4, 5];
+// const scores = [1, 2, 3, 4, 5];
+// const colors = ["red", "green", "blue"];
+// const languages = ["C", "C++", "Java", "JavaScript"];
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Monkong", "Singu"];
+
+// console.log(b.split("")) // ['M', 'a', 'n', 'g', 'o']
+// console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
+
+// console.log(words.join("")); // "JavaScriptцецікаво"
+// console.log(words.join(" ")); // "JavaScript це цікаво"
+// console.log(words.join("-")); // "JavaScript-це-цікаво"
+
+// console.log(clients.indexOf("Poly")); // 2
+// console.log(clients.indexOf("Monkong")); // -1
+
+// console.log(clients.includes("Poly")); // true
+// console.log(clients.includes("Monkong")); // false
+
+// numbers.push(1);
+// console.log(numbers); // [1]
+
+// numbers.push(2);
+// console.log(numbers); // [1, 2]
+
+// numbers.push(3);
+// console.log(numbers); // [1, 2, 3]
+
+// numbers.push(4);
+// console.log(numbers); // [1, 2, 3, 4]
+
+// numbers.push(5);
+// console.log(numbers); // [1, 2, 3, 4, 5]
+
+// console.log(numbers_two.pop()); //  5
+// console.log(numbers_two); // [1, 2, 3, 4]
+
+// console.log(numbers_two.pop()); //  4
+// console.log(numbers_two); // [1, 2, 3]
+
+// console.log(numbers_two.pop()); //  3
+// console.log(numbers_two); // [1, 2]
+
+// console.log(numbers_two.pop()); //  2
+// console.log(numbers_two); // [1]
+
+// console.log(numbers_two.pop()); //  1
+// console.log(numbers_two); // []
+
+// console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
+// console.log(clients.slice()); // ["Mango", Ajax", "Poly", "Kiwi"]
+// console.log(clients.slice(1)); // ["Ajax", "Poly", "Kiwi"]
+// console.log(clients.slice(2)); // ["Poly", "Kiwi"]
+
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores); // [4, 5]
+// console.log(deletedScores); // [1, 2, 3]
+// colors.splice(2, 0, "purple");
+// console.log(colors); // ["red", "green", "purple", "blue"]
+// colors.splice(1, 0, "yellow", "pink");
+// console.log(colors); // ["red", "yellow", "pink", "green", "blue"]
+// languages.splice(1, 1, "Python");
+// console.log(languages); // ["C", "Python", "Java", "JavaScript"]
+// languages.splice(2, 1, "C#", "Swift", "Go");
+// console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
+
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst); // ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"]
+// const allClientsWithNewFirst = newClients.concat(oldClients);
+// console.log(allClientsWithNewFirst); // ["Monkong", "Singu", "Mango", "Ajax", "Poly", "Kiwi"]
+// console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
+// console.log(newClients); // ["Monkong", "Singu"]
+
+
+// console.log([7, 3, 8, 9, 2].splice(3))
+
+// console.log([8, 5, 3, 9, 3].indexOf(3))
+
+// console.log([8, 5, 3, 9, 3].indexOf(4))
+
+// console.log(["JS", "is", "awesome!"].join(" "))
+
+// console.log([2, 4, 6].concat([1, 3], [5]))
+
+
+// const array = [1, "Hello", null, true, [1, 2, 3]]
+// console.log(array)
+
+// const firstElem = array[0] // Ось таак це виглядає
+// console.log(firstElem) // 1
+
+// const secondeElem = array[1] // Ось таак це виглядає
+// console.log(secondeElem) // Hello
+
+// console.log(array.length) // 5 - Порядковий номер
+// const last = array[array.length - 1] // Ми отримаємо омтанній індекс
+// console.log(last) // [1, 2, 3]
+
+
+
+// for(let i = 0; i < array.length; i += 1) {
+//     // console.log(i)
+//     // Звертаємось до елемента по індексу, створимо лічильник:
+//     console.log(array[i]);
+//     // І тепер ми бачемо перебраний масив, Готово
+// }
+
+
+// for(let i = 0; i < array.length; i += 1) {
+//     console.log(i)
+//     console.log(array[i]);
+//     if(Array.isArray(array[i])) {
+//         for(let j = 0; j < array[i].length; j += 1) {
+//             console.log(array[i][j]);
+//         }
+//         continue
+//     }
+//     console.log(array[i])
+// }
+
+
+// for(let i = 0; i < array.length; i += 1) {
+//     const item = array[i]
+//     if(Array.isArray(item)) {
+//         for(let j = 0; j < item.length; j += 1) {
+//             console.log(item[j]);
+//         }
+//         continue
+//     }
+//     console.log(array[i])
+// }
+
+// for(let item of array) {
+//     if(typeof item === 'string') {
+//         item = false
+//     }
+// }
+// console.log('for of:', array);
+
+// for(let i = 0; i < array.length; i += 1) {
+//     if(typeof array[i] === 'string') {
+//         array[i] = false
+//     }
+// }
+// console.log('for:', array)
+
+
+
+// let i = 0;
+
+// while (i < array.length) {
+//     // console.log(array[i]);
+//     if (typeof array[i] === 'string') {
+//         array[i] = false;
+//     }
+//     i += 1;
+// }
+
+// console.log('while:', array)
+
+
+
+// let value = 1;
+// let test = value;
+
+// value += 10;
+// console.log('value:', value, '|', 'test:', test)
+
+
+
+// const array = [1, 2, 3, 4, 5];
+// const copy = array;
+
+// array.push(6, 7); // 1, 2, 3, 4, 5, 6, 7
+// // copy.push(8, 9); // 1, 2, 3, 4, 5, 6, 7, 8, 9
+// console.log('array:', array, '|', 'copy:', copy)
+
+
+
+// console.log(1 === 1);
+// console.log('hello' === 'hello');
+// console.log([1, 2, 3] === [1, 2, 3]);
+
+// const array = [1, 2, 3, 4, 5];
+// const copy = array;
+// console.log(array === copy);
+
+
+
+const array = [1, 2, 3]
+array.push(4)
+console.log(array)
+array.pop()
+console.log(array)
+array.length = 0
+console.log(array)
+console.log(Array.isArray(array));

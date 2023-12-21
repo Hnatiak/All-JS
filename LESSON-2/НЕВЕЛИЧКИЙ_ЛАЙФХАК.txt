@@ -1,0 +1,26 @@
+У Visual Studio Code ви можете використовувати скорочення, відомі як "snippets", 
+для швидкого введення кодових шаблонів. Щоб створити свій власний скелет для циклу while,
+ви можете використовувати наступний підхід:
+
+Відкрийте Visual Studio Code.
+У верхньому меню перейдіть до "File" (Файл) -> "Preferences" (Параметри) -> "User Snippets" (Власні скорочення користувача).
+Виберіть JavaScript або створіть новий файл для JavaScript, якщо його ще немає.
+Додайте наступний код для створення скорочення для циклу while:
+
+{
+  "While Statement": {
+    "prefix": "wilestat",
+    "body": [
+      "while (condition) {",
+      "\t",
+      "}"
+    ],
+    "description": "While Statement (JavaScript Language Basics)"
+  }
+}
+
+Збережіть файл.
+Тепер, коли ви вводите wilestat у вашому файлі JavaScript і натискати Tab, Visual Studio Code автоматично замінить це на шаблон циклу while.
+
+
+Cаме так ви можете створити своє фласне скорочення у VSCode
