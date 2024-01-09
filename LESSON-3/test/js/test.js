@@ -485,3 +485,352 @@ console.log("Hello World");
 // console.log(account.getBalance())
 // console.log(account.getTransactionDetails())
 // console.log(account.getTransactionTotal())
+
+
+
+
+
+
+
+
+
+
+
+
+// const arr = [1, 2, 3]; 
+// const one = arr[0]; 
+// const two = arr[1]; 
+// const three = arr[2]; 
+// console.log(one, two, three)
+
+
+// const arr = [1, 2, 3]; 
+// const [one, two, three] = arr;
+// console.log(one, two, three)
+
+// const arr = [1, 2, 3]; 
+// const [_, two, three] = arr;
+// console.log(two, three)
+
+// const arr = [1, 2, 3]; 
+// const [ , two, three] = arr;
+// console.log(two, three)
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         mind: 'Smart',
+//         status: 'Filling in love',
+//         advantage: 'Beauty',
+//         haveABoy: true,
+//         HighSchool: false,
+//     }
+// };
+
+
+// const name = user.name;
+// const age = user.age;
+// const skills = user.skills;
+// const haveABoy = user.skills.haveABoy
+
+// // const {age, name} = user
+
+// console.log(age, name)
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+// };
+
+// const name = 'value';
+// const age = 17;
+
+// const {age : userAge, name : userName} = user;
+// console.log(age, name, userName)
+
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+// };
+
+// const name = 'value';
+// const userName = 'valueTwo';
+// const age = 17;
+
+// const {age : userAge, name : nameUser} = user;
+// console.log(age, name, userName, nameUser)
+
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         js: true,
+//         web: false,
+//         python: true,
+//     },
+// };
+
+// const {name, age, skills : { js }} = user
+// console.log(js)
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         js: true,
+//         web: false,
+//         python: true,
+//         cars : {
+//             audi: 'A6',
+//             bmv: 'x5',
+//         },
+//     },
+// };
+
+// const {name, skills : { cars : { audi } }} = user
+// console.log(audi)
+
+
+
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         js: true,
+//         web: false,
+//         css: true,
+//         cars : {
+//             audi: 'A6',
+//             bmv: 'x5',
+//         },
+//     },
+// };
+
+
+
+// const {name, skills: { js, web, css : sass, cars: { audi }}} = user
+// console.log(js, web, sass, audi)
+
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         js: true,
+//         web: false,
+//         css: true,
+//         cars : {
+//             audi: 'A6',
+//             bmv: 'x5',
+//         },
+//     },
+//     langs: [{ html : true}, {css: false}]
+// };
+
+
+
+// const { langs : [html, css] } = user
+// console.log(html, css) // html, css
+
+// const { langs : [html : {html}] } = user
+// console.log(html)
+
+
+
+
+
+// const user = {
+//     name: 'Anyta',
+//     age: 15,
+//     skills: {
+//         js: true,
+//         web: false,
+//         css: true,
+//         cars : {
+//             audi: 'A6',
+//             bmv: 'x5',
+//         },
+//     },
+//     langs: [{ html : true}, {css: false}]
+// };
+
+// for(const lang of user.langs) {
+//     console.log(lang)
+// }
+
+
+
+
+
+// const users = [
+//     {
+//         name: 'User1',
+//         langs: 'css',
+//         car: {
+//             audi: 'A8',
+//             bmv: 'X5',
+//         },
+//     }, 
+//     {
+//         name: 'User2',
+//         langs: 'html',
+//         car: {
+//             audi: 'x5',
+//             bmv: 'X6',
+//         },
+//     },
+//     {
+//         name: 'User3',
+//         langs: 'js',
+//         car: {
+//             audi: '2019',
+//         },
+//     },
+// ]
+
+// for(const {name} of users) {
+//     console.log(name)
+// }
+
+// for(const {name, langs} of users) {
+//     console.log(name, langs)
+// }
+
+// for(const {name, car : {audi}} of users) {
+//     console.log(name, audi)
+// }
+
+// for(const {name, car : {audi : car}} of users) {
+//     console.log(name, car)
+// }
+
+// for(const {name, car : {audi, bmv}} of users) {
+//     console.log(name, audi, bmv)
+// }
+
+// for(const {name, car : {audi, bmv = 'Emm I don\'t know'}} of users) {
+//     console.log(name, audi, bmv)
+// }
+
+
+
+
+
+// function foo({name, car: {bmw}}) {
+//     console.log(name, bmw)
+// }
+
+// foo({ name: 'User', langs: 'html', car: { bmw: 'X5', audi: 'A6' }})
+
+
+// function foo({name, car: {bmw = 'None' }}) {
+//     console.log(name, bmw)
+// }
+
+// foo({ name: 'User', langs: 'html', car: { audi: 'A6' }})
+
+
+
+
+// function foo({name, car: {bmw = 'Hmm, I don\'t know'} = {}}) {
+//     console.log(name, bmw)
+// }
+
+// foo({ name: 'User', langs: 'html', car: { bmw: 'X5', audi: 'A6' }})
+// foo({ name: 'User2', langs: 'css'})
+// foo({ name: 'User3', langs: 'js', car: { audi: 'A6' }})
+
+
+
+
+
+// function foo({name, car: {bmw = 'Hmm, I don\'t know'} = {}} = {}) {
+//     console.log(name, bmw)
+// }
+
+// foo({ name: 'User', langs: 'html', car: { bmw: 'X5', audi: 'A6' }})
+// foo({ name: 'User2', langs: 'css'})
+// foo({ name: 'User3', langs: 'js', car: { audi: 'A6' }})
+// foo()
+
+
+
+
+
+// function foo({name = 'No name', car: {bmw = 'Hmm, I don\'t know'} = {}} = {}) {
+//     console.log(name, bmw)
+// }
+
+// foo({ name: 'User', langs: 'html', car: { bmw: 'X5', audi: 'A6' }})
+// foo({ name: 'User2', langs: 'css'})
+// foo({ name: 'User3', langs: 'js', car: { audi: 'A6' }})
+// foo()
+
+
+
+
+
+// const arr = [12, 22, 3, 14, 45, 76, 47, 98, 99];
+// const min = Math.min(...arr)
+// console.log(min)
+
+
+
+
+
+// const arr = [12, 22, 3, 14, 45, 76, 47, 98, 99];
+// const arr1 = arr
+// console.log(arr1 === arr)
+
+
+
+
+
+// const arr = [12, 22, 3, 14, 45, 76, 47, 98, 99];
+// const arr1 = [...arr];
+// arr1.splice(0, 1);
+// console.log(arr === arr1);
+
+
+
+
+
+// const arr = [12, 22, 3, 14, 45, 76, 47, 98, 99];
+// const [first, ...props] = arr;
+// console.log(props);
+
+
+
+
+
+const arr = [12, 22, 3, 14, 45, 76, 47, 98, 99];
+const [first, ...props] = arr;
+console.log(props); // false
+
+for(let i = 0; i < props.length; i += 1) {
+    props[i] *= first
+}
+
+console.log(props)
